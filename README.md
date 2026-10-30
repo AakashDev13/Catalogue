@@ -33,10 +33,22 @@ catalogue/
 
 ⚙️ Installation & Setup
 
+Download and install Node.js (version 18 or newer).
+
+https://nodejs.org/
+
+Check installation:
+
+node -v
+npm -v
+
+
 1. Clone the repository
+   git clone https://github.com/AakashDev13/Catalogue
+
 
 bash
-git clone <your-repository-url>
+git clone https://github.com/AakashDev13/Catalogue
 
 
 2. Open the project folder
