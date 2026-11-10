@@ -1,10 +1,8 @@
-
  Catalogue API – Food Management System
 
 A RESTful API built using Node.js and Express.js to manage a food catalogue. It includes secure user authentication using JWT (JSON Web Tokens), password hashing with bcrypt, and role-based authorization.
 
 Features
-
 
 View all food items.
 Get a single food item by ID.
@@ -23,9 +21,7 @@ bcryptjs
 dotenv
 Postman
 
-
 📁 Project Structure
-
 
 text
 Catalogue/
@@ -166,6 +162,7 @@ Role-Based Authorization
 
 Different users have different permissions:
 
+
 Customer: Can view the food catalogue.
 Restaurant: Can view and add food items.
 Admin: Can view and add food items if granted the admin role.
@@ -193,6 +190,8 @@ Test the following scenarios:
 
 Login with valid customer credentials.
 Login with valid restaurant credentials.
+
+
 Access /items without a token – expect 401.
 Access /items with a valid token – expect 200.
 Try adding an item as a customer – expect 403.
@@ -200,12 +199,7 @@ Add an item as a restaurant – expect 201.
 Try logging in with incorrect credentials – expect 401.
 
 
-
-Environment Security
-
-The .env file contains sensitive configuration and must not be committed to GitHub.
-
-Example .gitignore:
+]
 
 gitignore
 node_modules/
