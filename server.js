@@ -1,17 +1,19 @@
-
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+require('dotenv').config();
 
 const app = express();
-const PORT = 3000;
+// const PORT = 3000;
 
 app.use(express.json());
 app.use(express.static('./public'));
 
 // JWT secret
 // For this assignment, use an environment variable or demo fallback.
-const SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
+
+const PORT = process.env.PORT || 3000;
+const SECRET = process.env.JWT_SECRET;
 
 // Users with hashed passwords
 const users = [
